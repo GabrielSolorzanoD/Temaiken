@@ -17,4 +17,11 @@
         }
         add_action('wp_enquqenue_scripts', 'temaiken_1_enquenue');
     }
+
+// declaracion menu
+add_action('init', function(){
+    register_nav_menus(array(
+        'menu-principal'=>__('Menú Principal', 'temaiken_1')
+    ));
+});
 ?>
